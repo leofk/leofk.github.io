@@ -4,6 +4,12 @@ body {
 
 a {
   text-decoration: none;
+  transition: color 0.15s, text-decoration 0.15s;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #555555 !important;
 }
 
 a:hover .navbtn {
