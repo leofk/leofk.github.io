@@ -1,0 +1,54 @@
+body {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover .navbtn {
+  color: #ff0000;
+  border-color: #ff0000;
+}
+
+.navbtn {
+  font-family: "Arial Black", Impact, "Arial Narrow", sans-serif;
+  font-size: 11px;
+  color: #ffff00;
+  border: 1px solid #555555;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.logo {
+  padding: 16px 0;
+  line-height: 1.1;
+}
+
+/* ── marching icons ── */
+@keyframes march-right {
+  from { transform: translateX(-200px); }
+  to   { transform: translateX(calc(100vw + 200px));  }
+}
+
+@keyframes march-left {
+  from { transform: translateX(120px); }
+  to   { transform: translateX(-100vw);  }
+}
+
+.march-r {
+  position: fixed;
+  left: 0;
+  animation: march-right linear infinite;
+  pointer-events: none;
+}
+
+.march-l {
+  position: fixed;
+  right: 0;
+  animation: march-left linear infinite;
+  pointer-events: none;
+}
